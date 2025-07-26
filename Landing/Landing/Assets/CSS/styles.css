@@ -1,5 +1,64 @@
 *{
-    color: blueviolet;
-    background-color: black;
-    margin: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.borde{
+    border: 3px solid purple;
+}
+.titulo{
+    height: 70px;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+nav{
+    height: 50px;
+}
+.logo{
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+.menu{
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+.ingreso{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+header, section{
+    height: 500px;   
+}
+.port-izq,
+.port-cnt,
+.port-der{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+.nosotros-izq{
+    width: 40%;
+    height: 35%;
+    float: left;}
+    
+.nosotros-cnt{
+    width: 20%;
+    height: 35%;
+    float: left;
+}
+.nosotros-der{
+    width: 40%;
+    height: 35%;
+    float: left;
+}
+
+footer{
+    height: 70px;
 }
