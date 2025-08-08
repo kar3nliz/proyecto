@@ -49,8 +49,9 @@ nav{
     flex: 1;
 }
 .nosotros{
-    display: grid;
-    grid-template-columns: auto 10% auto;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
 }
 .nosotros-izq1, .nosotros-der1 {
  flex: 2;
