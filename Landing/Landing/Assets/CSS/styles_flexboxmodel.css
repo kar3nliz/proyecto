@@ -50,19 +50,35 @@ nav{
 }
 .nosotros{
     display: flex;
-    flex-direction: column;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
-.nosotros-izq1, .nosotros-der1 {
- flex: 2;
+.nosotros-cnt2{
+    flex: 0 0 20%;
 }
+
+.nosotros-izq1, .nosotros-der3 {
+    flex: 0 0 40%
+}
+.bordecontacto{
+ display: flex;
+   flex-direction: row;
+   height: 400px;
+
+} 
+.contacto{
+    flex: 1;
+    border-right: 2px solid black
+}
+.ubicacion{
+    flex: 1;
+   display: flex;
+   flex-direction: column;
+}
+.ubicacion-ar{
+    flex: 1;
+    border-bottom: 2px solid salmon
     
-.nosotros-izq2, .nosotros-der2{
-    flex: 2;
 }
-.nosotros-1zq3, .nosotros-der3{
-    flex: 2;
-}
-.nosotros-cnt1, .nosotros-cnt2, .nosotros-cnt3 {
+.ubicacion-ab{
     flex: 1;
 }
