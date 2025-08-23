@@ -6,13 +6,6 @@
 nav, footer, .titulo{
     height: 100px;
 }
-.container{
-    width: 95%;
-    max-width: 1280px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
 .logo{
     background: blue;
 }
@@ -26,21 +19,10 @@ nav, footer, .titulo{
 header, section{
     height: 450;
 }
-.row{
-    display: flex;
-    flex-flow: row nowrap;
-} 
-.bordercol-4{
-    flex: 1;
+.portafolio{
+    height: 450px;
 }
 .nosotros{
-    display: flex;
-    flex-wrap: wrap;
-}
-.nosotros-cnt2{
-    flex: 0 0 20%;
-}
-
-.nosotros-izq1, .nosotros-der3 {
-    flex: 0 0 40%
+    height: 450px;
+    background: saddlebrown;
 }
