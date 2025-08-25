@@ -1,1 +1,3 @@
-// alert("Hola mundo");
+function iniciar(){
+    document.body.classList.add (container)
+}

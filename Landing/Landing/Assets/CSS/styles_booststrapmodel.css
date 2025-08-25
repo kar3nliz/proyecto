@@ -3,17 +3,103 @@
     padding: 0;
     margin: 0;
 }
+body {
+            font-family: 'Arimo', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .bienvenida-page, .inicio {
+            display: none;
+        }
+        
+        
+        .bienvenida-page:target, 
+        body:not([data-page]) .bienvenida-page {
+            display: flex;
+        }
+        
+        .inicio:target {
+            display: block;
+        }
+        
+        body:not(:target) .bienvenida-page {
+            display: flex;
+        }
+        
+        .bienvenida-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .bienvenida-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        
+        .bienvenida-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .bienvenida-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            background: rgba(255,255,255,0.2);
+            color: white !important;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .bienvenida-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            color: white !important;
+        }
+.col-12{
+    font-family: "Anton", sans-serif;
+}
+.inicio {
+    animation: slideInFromRight 0.8s ease-out;
+}
+        
+.container {
+    padding-top: 1rem;
+}
+
+.border {
+    border: 2px solid #dee2e6 !important;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
 nav, footer, .titulo{
     height: 100px;
 }
 .logo{
-    background: blue;
+    background: salmon;
+    font-family: "Anton", sans-serif;
 }
 .menu{
-    background: green;
+    background: salmon;
+    font-family: "Anton", sans-serif;
 }
 .ingreso{
     background: salmon;
+    font-family: "Anton", sans-serif;
 }
 
 header, section{
@@ -21,8 +107,33 @@ header, section{
 }
 .portafolio{
     height: 450px;
+    font-family: "Anton", sans-serif;
 }
 .nosotros{
     height: 450px;
-    background: saddlebrown;
+    background: cornflowerblue;
+    font-family: "Anton", sans-serif;
+}
+.card-group{
+    font-family: "Anton", sans-serif;
+
+}
+
+@media (max-width: 768px) {
+    .bienvenida-title {
+        font-size: 2.5rem;
+    }
+            
+    .bienvenida-subtitle {
+        font-size: 1rem;
+    }
+            
+    .bienvenida-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    .titulo {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
 }
