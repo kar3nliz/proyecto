@@ -72,8 +72,8 @@ body {
 .col-12{
     font-family: "Anton", sans-serif;
 }
-.inicio {
-    animation: slideInFromRight 0.8s ease-out;
+.inicio {   
+     animation: slideInFromRight 0.8s ease-out;
 }
         
 .container {
